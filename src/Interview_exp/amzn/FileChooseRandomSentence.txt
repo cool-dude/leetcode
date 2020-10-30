@@ -1,0 +1,9 @@
+ Given a file with large number of sentences,
+ choose a sentence randomly where all sentences have equal probability.
+
+I could not really solve this question. I gave him few approaches
+like counting number of sentences and then choosing a
+random between and then choosing a line.
+However, I later realized I could have normalized the
+sentence length by subtracting mean length and dividing by
+standard variance. But I am not sure if this approach would have satisfied the interviewer.

@@ -1,0 +1,16 @@
+//WebServer composed of 
+//HttpListener and RequestProc
+//SKILSS
+Platforms/Languages: Java, JEE (EJB, Servlets, JMS), PHP, Scala, R, Objective-C, Python, C, C++
+Big Data Technologies: Hadoop, HBase, Hive
+NoSQL: Redis, MongoDB
+API/REST Frameworks: Play Mini, Spray.io.
+Web Frameworks: Grails, Spring, Lift, Play, Scalatra
+Web: HTML5 (Offline Storage, SQLite, IndexedDB), Bootstrap, jQuery, D3, WebSockets, CSS3 
+App Servers: JBoss, Websphere, WebLogic, OC4J, Tomcat, Jetty
+GPU: OpenCL, CUDA, AMD Stream, APARAPI
+RIA Frameworks: jQuery, Bootstrap, Qooxdoo, Flex, ExtJS
+Standards & Specifications: UML, UTP, KDM, EDOC, XPDL, BPEL, WS-BPEL, SCA, JBI, JCA, EAI
+MDA/ADM: EMF, UML, MOF, QVT, CDO, openArchitectureWare
+
+Specialties: Technology Strategy, Technology Consulting, Web/Mobile Scale Architectures, Low Latency Architectures, BigData, NoSQL, Distributed Computing, Polyglot Programming, eCommerce, Trading, ERP, CRM, MDA, BPM

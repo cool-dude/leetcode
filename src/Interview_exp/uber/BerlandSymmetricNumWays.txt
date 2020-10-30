@@ -1,0 +1,21 @@
+Q3 has a O(log x) solution.
+
+The key observation is that all cities other than city 1 are symmetric, so you only need to consider ways to end up at city 1 after k moves (call this A) and ways to end up at any other city besides city 1 after k moves (call this B).
+
+Now we look at transitions:
+city 1 to itself: 0 (not allowed)
+city 1 to not city 1: n-1 ways (each of the n-1 destinations are allowed)
+not city 1 to city 1: 1 way
+not city 1 to not city 1: n-2 ways (cannot go to the same city)
+
+So we can see after k+1 steps, we would have A'=B and B'=(n-1)A+(n-2)B.
+If we express this linear transformation as matrix multiplcation, e.g.
+
+[[A,B]] * [[0,1],[n-1,n-2]] = [[next A, next B]]
+we can then view repeated applications of this process as a matrix power.
+Since we start with A=1 and B=0 and want to end up back in city 1:
+
+[[1,0]] * [[0,1],[n-1,n-2]]^x = [[answer, ignored]]
+High matrix powers mod m can be computed efficiently via binary lifting (repeated squaring) in O(D^3 log x) time (here D=2).
+
+I should also mention there are even faster ways to compute linear recurrence terms (e.g. polynomial remainder of x^n divided by characteristic polynomial). However for D=2, these won't provide much speedup, so the simpler matrix power approach is fine.

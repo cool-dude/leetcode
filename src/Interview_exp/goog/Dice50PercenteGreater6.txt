@@ -1,0 +1,15 @@
+/*Determine the minimum number of dice when we
+throw all of them we have at least a 50%
+chance of getting 6.*/
+P(1 time6)+P(2 time 6)...+P(n times 6)≥12
+1−P(no6)≥12
+1−(1−1/6)n≥12
+1−1/2≥(5/6)n
+1/2≥(5/6)n
+1/2=(5/6)n
+−log2=n(log5−log6)
+−3.0=n(log10−log2−log2−log3)
+30=n(1−0.3−0.3−0.479)
+n=3.79
+n≥3.79
+n=4

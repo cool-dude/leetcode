@@ -1,0 +1,95 @@
+Phone screen (45 mins)
+
+One of my weirdest google phone interviews.
+Interviewer was not prepared and arrived 5 minutes
+late which left us with 40 minutes for the interview.
+
+Warm up array question [Leetcode Easy].
+Finished this in about 10 minutes.
+Significantly harder adhoc grid question which
+involved binary search. Took me a while to clarify
+any specifics and had about 12 mins for implementation.
+Got to something in the end, but definitely not
+code complete. Had a few loose ends for sure.
+For some reason, the interviewer left 8 minutes at
+
+the end for question about his role and the company.
+He was definitely unprepared imo as generally its 3-4 minutes a
+t the end. He concluded the interview 2 minutes early,
+so efffectively we only had 38 minutes for this interview.
+Anyhow, I cleared this to my surprise and made it onsite.
+
+Onsite 1 (5 x 45 mins)
+
+[Leetcode Medium] Array based question which had two parts.
+I think I did reasonably well here but didn't have enough
+time to run through test cases for the follow up.
+The interviewer was very shy and didn't seem to talk much.
+
+[Leetcode Easy-Medium] This was a geometry based question
+which seemed hard at first but turned out to be easy-ish.
+Implementation was a bit messy on whiteboard but I think
+this round went well.
+
+[Leetcode Medium] Interviewer was unprepared here and I was asked
+a weird geometry question again. I did very well in this round and
+we had enough time for follow up questions and discussions.
+
+[Leetcode Medium-Hard] After the warm up question,
+this round was a lot more open ended and we had to design
+ some kind of text editor with a few constraints.
+ A lot of this round was about talking about your thought
+ process and discussing various approaches.
+
+[Googlyness] This was like any other behavioral
+round where the interviewer goes through a standard checklist.
+
+Recruiter got back after 2-3 weeks requesting 2
+additional rounds mostly focused on algorithms.
+Due to the covid-19 situation, this was conducted virtually.
+
+Onsite 2 (2 x 45 mins)
+
+[Leetcode Medium-Hard] Interviewer was again 5 minutes
+late here. Got asked an interval binary search question and
+then a hard follow up with only 20 mins remaining.
+ Was next to impossible to find a working solution
+given the time constraints. Although, I got to something
+in the end, it was probably not enough.
+
+[Leetcode Medium-Hard] BFS/DFS grid with land/water
+kind of question (not your typical find # of islands question).
+Got to the solution with no hints except for one detail which
+was pointed out to me (forgot to pop off from the queue in my BFS function).
+Testing was extremely hard on google docs and I believe this
+is where I lost a few points. It was hard to trace out the steps of the BFS on Docs.
+
+Got the news that HC did not get enough signal on
+algorithms/data structures. I think I got very close,
+but I have no idea why HC thinks this especially
+after I managed to figure out the algorithms for almost all my rounds.
+
+To anyone interviewing with Google, I'd say that a LOT of it is random noise.
+Your interviewers might be late, your interviewer might forget
+their questions, or you might have to do 3 rounds on Google Docs
+which is a bad experience. Always remember Googlers really care about
+your thought process. You need to verbalize your arguments
+properly to stand a good chance.
+
+I'm fortunate to have received offers from other places,
+so I'll list down what I did over the past 7-8 months:
+
+Did Leetcode contests weekly (follow up with looking
+at solutions and attempting unsolved questions)
+Identifying weak points and looking at specific problems
+in that area (like Graphs for eg). ALWAYS look at the
+'Discuss' tab for better insights. I have learnt
+countless techniques through the Discuss tab.
+A week before the interview, I set 15 minute timers for
+Easy-Medium questions and 25 minute timers for Hard questions.
+You have limited time so you need to cover as much topics as you can and get into the zone.
+Used pen and paper to sketch out ideas. Trust me, this works.
+Talked to myself while thinking of problems (not as often as I
+ should have, though). I think this can really improve your thoughtprocess.
+Got into the "gratefulness" mindset. I hardly even expected a
+Google onsite. I was treating every round from then on as a "bonus". It sucks to not have cleared it (for the 3rd time in my life :/ ) but at the end of the day, I had a great experience and I am super grateful for that.

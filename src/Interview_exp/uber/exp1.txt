@@ -1,0 +1,26 @@
+Technical Phone Screen
+Questions related to time and space complexity of
+HashMap, ArrayList and TreeMap.
+Single LinkedList and Doubly LinkedList
+Questions on reducing DB calls (sharding, memcached etc)
+Questions on making API calls faster (in-memory data grids)
+Questions on microservices architecture.
+Onsite Interview (4 rounds)
+Round 1: (Whiteboard session)
+Write an algorithm to print all combinations of characters
+that could represent using the numbers typed: Letter Combinations of a Phone Number
+
+Round 2: (Engineering Manager
+Cultural and behavioral interview
+Questions on conflicts within team and outside team
+Strengths and Weakness
+Round 3: (Architecture Interview)
+
+Design Uber eats
+How to implement caching
+Geolocation based user tracking
+Node Clustering and Database replication
+
+Round 4: (Coding Interview)
+Design LRU cache with runtime O(1) : LRU Cache
+Stressful interview but, overall experience was good.

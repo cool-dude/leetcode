@@ -1,0 +1,61 @@
+/*LC142: Linked List Cycle II
+https://leetcode.com/problems/linked-list-cycle-ii/
+Given a linked list, return the node
+where the cycle begins. If there is no cycle, return null.
+There is a cycle in a linked list if there
+is some node in the list that can be reached
+again by continuously following the next pointer.
+Internally, pos is used to denote the index of
+the node that tail's next pointer is connected to.
+Note that pos is not passed as a parameter.
+Notice that you should not modify the linked list.
+Follow up:
+Can you solve it using O(1) (i.e. constant) memory?
+Example 1:
+Input: head = [3,2,0,-4], pos = 1
+Output: tail connects to node index 1
+Explanation: There is a cycle in the linked list,
+where tail connects to the second node.
+
+Example 2:
+Input: head = [1,2], pos = 0
+Output: tail connects to node index 0
+Explanation: There is a cycle in the linked list, where tail connects to the first node.
+
+Example 3:
+Input: head = [1], pos = -1
+Output: no cycle
+Explanation: There is no cycle in the linked list.*/
+/**Definition for singly-linked list.
+ * class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }*/
+class Sln {
+    public ListNode detectCycle(ListNode head) {
+        if(head==null||head.next==null)
+            return null;
+        ListNode fst=head,sec=head;
+        boolean isCycle=false;
+        while (fst!=null&&sec!=null){
+            fst=fst.next;
+            if(sec.next==null) return null;
+            sec=sec.next.next;
+            if(fst==sec) {
+                isCycle=true;
+                break;
+            }
+        }
+        if(!isCycle) return null;
+        fst=head;
+        while (fst!=sec){
+            fst=fst.next;
+            sec=sec.next;
+        }
+        return fst;
+    }
+}

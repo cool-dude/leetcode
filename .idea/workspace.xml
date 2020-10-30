@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77b42e52-9698-45f2-b384-d9cde2ef6d06" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Xh8mpMHKtBJy8lQtElNkQNKZCY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Interview_exp/goog/string" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Interview_exp/goog/string" />
+      <recent name="$PROJECT_DIR$/src/Interview_exp/goog/graph" />
+      <recent name="$PROJECT_DIR$/src/Interview_exp/goog/graph/union_find" />
+      <recent name="$PROJECT_DIR$/src/Interview_exp/goog/dfs" />
+      <recent name="$PROJECT_DIR$/src/Interview_exp/contests/monthly/oct/w2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Interview_exp/goog/graph/dfs" />
+      <recent name="$PROJECT_DIR$/src/Interview_exp/goog/graph" />
+      <recent name="$PROJECT_DIR$/src/dp" />
+      <recent name="$PROJECT_DIR$/src/Interview_exp/goog/string" />
+      <recent name="$PROJECT_DIR$/src/Interview_exp/goog/hash_map" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RLEStrCompression" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/Interview_exp/leetcode_contests/weekly/199" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/Interview_exp/leetcode_contests/weekly/199/RLEStrCompression.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.RLEStrCompression" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77b42e52-9698-45f2-b384-d9cde2ef6d06" name="Default Changelist" comment="" />
+      <created>1584682463832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584682463832</updated>
+      <workItem from="1584682467012" duration="1758000" />
+      <workItem from="1585040684060" duration="44000" />
+      <workItem from="1591778126060" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="328" y="119" key="#Project_Structure" timestamp="1595877790883">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="328" y="98" key="#Project_Structure/-1920.0.1920.1080/0.0.1680.970@0.0.1680.970" timestamp="1595393099630" />
+    <state x="328" y="119" key="#Project_Structure/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1595877790883" />
+    <state x="-1365" y="285" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597809660758">
+      <screen x="-1920" y="23" width="1920" height="977" />
+    </state>
+    <state x="486" y="277" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1595877846702" />
+    <state x="-1365" y="285" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.23.1920.977/0.23.1680.1027@-1920.23.1920.977" timestamp="1597809660758" />
+    <state x="664" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601666966048">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="-1161" y="334" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1600278930275" />
+    <state x="664" y="325" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1601666966048" />
+    <state x="664" y="316" key="#com.intellij.fileTypes.FileTypeChooser/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1600588979084" />
+    <state x="664" y="341" key="#com.intellij.fileTypes.FileTypeChooser/-1920.23.1920.977/0.23.1680.1027@0.23.1680.1027" timestamp="1597917183763" />
+    <state x="428" y="199" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1595876591590">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="428" y="199" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1595876591590" />
+    <state x="199" y="121" key="CommitChangelistDialog2" timestamp="1599675043105">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="-1693" y="231" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1680.947@-1920.23.1920.1057" timestamp="1598379018809" />
+    <state x="199" y="121" key="CommitChangelistDialog2/0.23.1680.947@0.23.1680.947" timestamp="1599675043105" />
+    <state width="1659" height="164" key="GridCell.Tab.0.bottom" timestamp="1595935781649">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1659" height="164" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1595935781649" />
+    <state width="1659" height="164" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1595877940239" />
+    <state width="1659" height="164" key="GridCell.Tab.0.center" timestamp="1595935781648">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1659" height="164" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1595935781648" />
+    <state width="1659" height="164" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1595877940237" />
+    <state width="1659" height="164" key="GridCell.Tab.0.left" timestamp="1595935781647">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1659" height="164" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1595935781647" />
+    <state width="1659" height="164" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1595877940237" />
+    <state width="1659" height="164" key="GridCell.Tab.0.right" timestamp="1595935781648">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1659" height="164" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1680.1027@-1920.23.1920.1057" timestamp="1595935781648" />
+    <state width="1659" height="164" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1595877940238" />
+    <state x="283" y="166" key="SettingsEditor" timestamp="1595877664385">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="283" y="166" key="SettingsEditor/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1595877664385" />
+    <state x="824" y="536" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600008418565">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="-978" y="585" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1597254442520" />
+    <state x="-843" y="607" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1080/0.23.1680.947@-1920.0.1920.1080" timestamp="1598815060346" />
+    <state x="-978" y="596" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.23.1920.1057/0.23.1680.947@-1920.23.1920.1057" timestamp="1596740389535" />
+    <state x="824" y="536" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1600008418565" />
+    <state x="942" y="555" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.947@0.23.1680.947" timestamp="1597405942440" />
+    <state x="583" y="360" width="724" height="547" key="find.popup" timestamp="1603981848322">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="-1097" y="410" width="724" height="547" key="find.popup/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1603559403474" />
+    <state x="674" y="380" width="633" height="615" key="find.popup/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1603825084457" />
+    <state x="-1097" y="396" width="724" height="559" key="find.popup/-1920.0.1920.1080/0.0.1680.970@-1920.0.1920.1080" timestamp="1595398511925" />
+    <state x="-1097" y="410" width="724" height="547" key="find.popup/-1920.0.1920.1080/0.23.1680.1027@-1920.0.1920.1080" timestamp="1603368585485" />
+    <state x="674" y="380" width="633" height="615" key="find.popup/-1920.23.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1601811112328" />
+    <state x="-1097" y="410" width="724" height="582" key="find.popup/-1920.23.1920.1057/0.23.1680.947@-1920.23.1920.1057" timestamp="1602094834275" />
+    <state x="674" y="366" width="633" height="554" key="find.popup/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1603903855751" />
+    <state x="674" y="380" width="633" height="615" key="find.popup/-1920.23.1920.977/0.0.1680.1050@0.0.1680.1050" timestamp="1603114103854" />
+    <state x="-888" y="337" width="724" height="572" key="find.popup/-1920.23.1920.977/0.23.1680.1027@-1920.23.1920.977" timestamp="1601656224609" />
+    <state x="720" y="399" width="634" height="532" key="find.popup/-1920.23.1920.977/0.23.1680.1027@0.23.1680.1027" timestamp="1602352215754" />
+    <state x="674" y="380" width="633" height="615" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1603813947432" />
+    <state x="583" y="360" width="724" height="547" key="find.popup/0.23.1680.947@0.23.1680.947" timestamp="1603981848322" />
+    <state x="-1620" y="156" key="new project wizard" timestamp="1599281968018">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1620" y="156" key="new project wizard/-1920.23.1920.1057/0.23.1680.947@-1920.23.1920.1057" timestamp="1599281968018" />
+    <state x="-1620" y="146" key="new project wizard/-1920.23.1920.977/0.23.1680.1027@-1920.23.1920.977" timestamp="1596627400825" />
+    <state x="562" y="269" key="refactoring.ChangeSignatureDialog" timestamp="1602941644491">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="562" y="269" key="refactoring.ChangeSignatureDialog/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1602941644491" />
+    <state x="547" y="234" width="670" height="594" key="search.everywhere.popup" timestamp="1603965421528">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="-1295" y="241" width="670" height="676" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1680.1050@-1920.0.1920.1080" timestamp="1597252508774" />
+    <state x="547" y="234" width="670" height="658" key="search.everywhere.popup/-1920.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1603041531383" />
+    <state x="547" y="234" width="670" height="594" key="search.everywhere.popup/-1920.23.1920.1057/0.23.1680.947@0.23.1680.947" timestamp="1600366138592" />
+    <state x="547" y="234" width="670" height="594" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1603965421528" />
+  </component>
+</project>

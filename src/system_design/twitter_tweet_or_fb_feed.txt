@@ -1,0 +1,138 @@
+Use cases:
+	• User posts tweet.
+		○ Service pushes tweets to followers.
+		○ sending push notifications/emails.
+	• User views user-timeline(activity from user).
+	• User views home-timeline(activity from people user following).
+	• User searches keywords.
+	• Service has high availability.
+Out-scope:
+	• Service pushes tweets to Twitter Firehose/others.
+	• Service strips out tweets based on user's visibility.
+		○ Hide @reply if the user is not also following the person being replied to.
+		○ Respect 'hide retweets' setting.
+Analytics.
+
+State assumptions:
+General:
+	• Traffic not evenly distributed.
+	• Posting tweet should be fast.
+		○ Fanning out tweet to all your followers should be fast, unless you have million followers.
+	• 100M active users.
+	• 500M tweets/day / 15B tweets/month.
+		○ Each tweet averages fanout of 10 deliveries.
+		○ 5B total tweets delivered fanout/day.
+		○ 150B tweets delivered fanout/month.
+	• 250B read requests per month.
+	• 10B searches per month
+Timeline:
+	• Viewing the timeline should be fast.
+	• Twitter more read heavy than write heavy.
+		○ Optimize for fast reads of tweets.
+	• Ingesting tweets is write heavy.
+Search:
+	• Searching should be fast.
+	• Search is read-heavy.
+
+Use case: User posts a tweet
+We could store the user's own tweets to populate
+the user timeline (activity from the user) in a
+relational database. We should discuss the use
+cases and tradeoffs between choosing SQL or NoSQL.
+
+Delivering tweets and building the home timeline
+(activity from people the user is following) is trickier.
+Fanning out tweets to all followers (60 thousand
+tweets delivered on fanout per second) will overload a traditional
+relational database. We'll probably want to choose a
+data store with fast writes such as a NoSQL database or Memory Cache.
+Reading 1 MB sequentially from memory takes about 250 microseconds,
+while reading from SSD takes 4x and from disk takes 80x longer.1
+
+We could store media such as photos or videos on an Object Store.
+
+The Client posts a tweet to the Web Server, running as a reverse proxy
+The Web Server forwards the request to the Write API server
+The Write API stores the tweet in the user's timeline on a SQL database
+The Write API contacts the Fan Out Service, which does the following:
+Queries the User Graph Service to find the user's followers stored in the Memory Cache
+Stores the tweet in the home timeline of the user's followers in a Memory Cache
+O(n) operation: 1,000 followers = 1,000 lookups and inserts
+Stores the tweet in the Search Index Service to enable fast searching
+Stores media in the Object Store
+Uses the Notification Service to send out push notifications to followers:
+Uses a Queue (not pictured) to asynchronously send out notifications
+Clarify with your interviewer how much code you are expected to write.
+
+If our Memory Cache is Redis, we could use a native Redis list with the following structure:
+           tweet n+2                   tweet n+1                   tweet n
+| 8 bytes   8 bytes  1 byte | 8 bytes   8 bytes  1 byte | 8 bytes   8 bytes  1 byte |
+| tweet_id  user_id  meta   | tweet_id  user_id  meta   | tweet_id  user_id  meta   |
+The new tweet would be placed in the Memory Cache, which populates user's home timeline (activity from people the user is following).
+
+We'll use a public REST API:
+
+$ curl -X POST --data '{ "user_id": "123", "auth_token": "ABC123", \
+    "status": "hello world!", "media_ids": "ABC987" }' \
+    https://twitter.com/api/v1/tweet
+Response:
+{
+    "created_at": "Wed Sep 05 00:37:15 +0000 2012",
+    "status": "hello world!",
+    "tweet_id": "987",
+    "user_id": "123",
+    ...
+}
+For internal communications, we could use Remote Procedure Calls.
+
+Use case: User views the home timeline
+The Client posts a home timeline request to the Web Server
+The Web Server forwards the request to the Read API server
+The Read API server contacts the Timeline Service, which does the following:
+Gets the timeline data stored in the Memory Cache, containing tweet ids and user ids - O(1)
+Queries the Tweet Info Service with a multiget to obtain additional info about the tweet ids - O(n)
+Queries the User Info Service with a multiget to obtain additional info about the user ids - O(n)
+REST API:
+$ curl https://twitter.com/api/v1/home_timeline?user_id=123
+Response:
+{
+    "user_id": "456",
+    "tweet_id": "123",
+    "status": "foo"
+},
+{
+    "user_id": "789",
+    "tweet_id": "456",
+    "status": "bar"
+},
+{
+    "user_id": "789",
+    "tweet_id": "579",
+    "status": "baz"
+},
+
+Use case: User views the user timeline
+The Client posts a user timeline request to the Web Server
+The Web Server forwards the request to the Read API server
+The Read API retrieves the user timeline from the SQL Database
+The REST API would be similar to the home timeline, except
+all tweets would come from the user as opposed to the people the user is following.
+
+Use case: User searches keywords
+The Client sends a search request to the Web Server
+The Web Server forwards the request to the Search API server
+The Search API contacts the Search Service, which does the following:
+Parses/tokenizes the input query, determining what needs to be searched
+Removes markup
+Breaks up the text into terms
+Fixes typos
+Normalizes capitalization
+Converts the query to use boolean operations
+Queries the Search Cluster (ie Lucene) for the results:
+Scatter gathers each server in the cluster to determine if there are any results for the query
+Merges, ranks, sorts, and returns the results
+REST API:
+$ curl https://twitter.com/api/v1/search?query=hello+world
+The response would be similar to that of the home timeline,
+except for tweets matching the given query.
+

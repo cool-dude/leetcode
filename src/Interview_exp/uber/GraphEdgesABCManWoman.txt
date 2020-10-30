@@ -1,0 +1,27 @@
+Graph edges A,B,C traversed by man, woman and both.
+Q:Given a graph where each edge is one of the three types:
+A, B and C. A type edge can only be traversed by a man.
+B type edge can only be traversed by a woman and C type
+can be traversed by both.
+
+  You need to tell the maximum number of edges that can
+  be removed from the graph so that it can still be fully
+  traversed by both a man and a woman.
+
+SLN: Let's assume that by not removing any edge,
+the graph is traversable by both - man and woman.
+Otherwise, there is no solution.
+    Let the number of man edges be M and the number of woman edges be W.
+    First, we will start adding all edges that can be traversed by both -
+    man and woman, 1 by 1. Use the disjoint set union data structure for this.
+    If by adding a new edge we connect 2 nodes in the same connected component,
+    we discard that edge, otherwise, we add it. Let the number of edges
+    discarded in this process be D. Now, you will have some number
+    of connected components. Let this number be K. Now, only considering
+    man edges, each non-redundant man edge should reduce the number
+    of connected components by 1. Hence, minimum number of man edges that
+    must be added to make sure that we are left with exactly 1
+    connected components at the end is K - 1. Hence we will be discarding
+    M - (K - 1) man edges. We do the same thing for woman edges.
+    Hence, we will be diacarding W - ( K - 1) woman edges.
+    Hence total edges discarded = D + (W - (K - 1) )+ (M - (K - 1)).

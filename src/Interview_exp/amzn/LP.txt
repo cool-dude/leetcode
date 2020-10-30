@@ -1,0 +1,19 @@
+LP-1 (10 minutes): Tell me about a situation where you have missed a deadline
+Follow-ups: Did you learn anything from it, how did your manager reacted.
+
+LP-2(10 minutes): Tell me about a situation where you had a disagreement.
+
+LP-3 (15 minutes): Tell me about a situation where you did something
+extra for your product, which was not part of your daily tasks.
+Follow-ups: Explain the impact in terms of numbers, why was the task was not in sprint task.
+
+LP-4 (5 minutes): Tell me about a time where you missed a deadline.
+
+LP-5 (15 minutes): Tell me about a situation where you
+learned something very new and aced it.
+
+LP-6: Tell me about a situation where you did something innovative.
+(10 minutes)
+
+LP-7: Tell me about a situation each team mates proposed different
+solution for same problem and you had to accept their approach (10 minutes).

@@ -1,0 +1,12 @@
+Q2 has a pretty elegant solution: first player wins if and only if the starting rectangle has even area! Since the friend moves first, the answer is "I" if both dimensions are odd, and "My Friend" otherwise.
+
+There is a simple explanation but it requires familiarity with nimbers and some background in combinatorial game theory:
+The result we want to prove is that an even area rectangle has nimber 1 and an odd area rectangle has nimber 0.
+Base case of induction: Area=1 has no moves, so its nimber is 0 (losing).
+Now pick some arbitrary area=A and let's compute its nimber.
+We start by assuming the inductive hypothesis, which is that all smaller even areas < A have nimber 1 and all smaller odd areas < A have nimber 0.
+If A is even, then the every move will either leave two smaller odd areas (nimber 0 xor 0 = 0) or two smaller even areas (nimber 1 xor 1 = 0).
+Since the minimum excluded number is 1, A would then have nimber 1.
+If A is odd, then every move (if any) leaves a smaller odd area + smaller even area (nimber 0 xor 1 = 1).
+Since the minimum excluded number is 0, A would then have nimber 0.
+This completes the inductive step.

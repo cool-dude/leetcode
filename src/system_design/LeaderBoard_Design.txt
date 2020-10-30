@@ -1,0 +1,93 @@
+https://aws.amazon.com/blogs/database/building-a-real-time-gaming-leaderboard-with-amazon-elasticache-for-redis/
+Here’s a basic relational database leaderboard implementation:
++---------+---------+------+-----+---------+-------+
+| Field   | Type    | Null | Key | Default | Extra |
++---------+---------+------+-----+---------+-------+
+| user_id | int(11) | NO   | MUL | NULL    |       |
+| score   | int(11) | NO   | MUL | NULL    |       |
++---------+---------+------+-----+---------+-------+
+This table exemplifies the most basic leaderboard schema.
+Some implementations would add more information, such as
+game_id value to reference a different game, or a timestamp
+to break a tied score. But the underlying concept of how to
+query and update the leaderboard remains the same.
+
+Here’s the create table script to execute a basic leaderboard:
+CREATE TABLE `leaderboard` (
+  `user_id` int(11) NOT NULL,
+  `score` int(11) NOT NULL,
+  KEY `idx_score` (`score`),
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `leaderboard_ibfk_1`
+  FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
+
+Scores are incremented or decremented using atomic SQL statements such as the following:
+update leaderboard set score=score+1 where user_id=<user_id>;
+
+Rank Computation Relational:
+SELECT *,(SELECT COUNT(*) FROM leaderboard l2
+WHERE l2.score>=l1.score) RANK FROM leaderboard l1 WHERE l1.user_id=<user_id>;
+Time complexity: Quadratic.
+
+Redis offers one highly efficient and scalable solution.
+Redis is an in-memory data store that supports basic
+key-value functionality. It also supports a variety of
+data structures such as hashes, lists, sets, sorted sets,
+range queries, and geospatial indexes. This suggests the
+potential advantages of storage and querying through
+ElastiCache for Redis instead of through relational databases.
+
+The ElastiCache for Redis approach has the following benefits:
+1)Frees up database resources for other types of requests.
+2)Delivers high request rates suitable for data that’s
+not easily cached.
+3)Supports a data structure optimized to handle
+leaderboard use cases.
+
+
+Introduction to ElastiCache
+ElastiCache is a fully managed, low latency, in-memory data
+store that supports either Memcached or Redis. With ElastiCache,
+management tasks such as provisioning, setup, patching, configuration,
+monitoring, backup, and failure recovery are taken care of,
+so you can focus on application development.
+
+Specific to Redis, ElastiCache lets you “scale in” or
+“scale out” both reads and writes. Cluster mode offers
+added shard support, enabling write scaling. It supports
+up to 250 shards, giving you up to 170.6 TB of in-memory
+data. Online cluster resizing enables zero downtime scaling
+in or out of shards. You can also automate scaling in response
+to Amazon CloudWatch alarms. To scale reads, you only need
+to add more read replicas.
+
+Introduction to sorted sets:
+Sorted sets contain a list of members with
+associated scores. Although set members are
+unique, score values are permitted to repeat.
+Scores are used to rank the list in ascending order.
+
+One key difference between sorted sets and relational
+databases is when the tool sorts the list. During
+insert or update operations, sorted sets automatically
+position the item in the right order. Because of this
+pre-sorting, queries run significantly faster. You can
+quickly and efficiently query the middle of the list or
+get the rank of a specific member. Sorted sets finds
+specific rankings logarithmically, proportional to the
+number of members.
+
+By contrast, relational databases order items during
+querying, adding computational burden to the database.
+Obtaining the rank of a specific player involves quadratic
+time complexity.
+
+Here are some key commands that you can run with sorted sets to build leaderboards:
+
+ZADD—Add a new member to the sorted set or update the score of a member already in the list.
+ZRANGE—Obtain a range of members sorted in ascending order and filtered by using rank range (zero indexed). For reverse ordering, use ZREVRANGE.
+ZRANK—Obtain the rank (zero indexed) of the member. This rank is in ascending order. For descending order, use ZREVRANK.
+ZRANGEBYSCORE—Like ZRANGE, but filters the score. For reverse ordering, use ZREVRANGEBYSCORE.
+ZSCORE—Retrieve the score of a member.
+ZREM—Remove a member from the leaderboard.
+Any sorted set command that contains the word “rev” means reverse or descending order.

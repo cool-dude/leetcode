@@ -1,0 +1,19 @@
+/*Design an enterprise grade chat service which supports:
+authorized and anonymous users
+realtime message delivery
+chat history
+direct and group text messaging
+highly available
+durable*/
+Realtime messaging delivery - you can use websockets.
+chat history, for that you need to
+be an authorized user, you can store
+the data in db and retrieve the history
+of whatever conversation you had .
+highly available. you can distribute the
+data by sharding. span multiple service API
+and route through load balancer. keep the
+static content of your web page if its a
+web client in cdn server.
+there are lot to do with this questions.
+but we can start with the above.

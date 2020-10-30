@@ -1,0 +1,31 @@
+******************LEETCODE********************
+
+01. 1004 ----------> Max Consecutive Ones III
+02.  647 ----------> Palindromic Substrings
+03. 1026 ----------> Maximum Difference Between Node and Ancestor
+
+
+******************OTHERS**********************
+
+01. Longest Increasing Subsequence----last Try: 03/2019
+02. Longest common subsequence
+03. Segment data_structure.tree: https://github.com/jakobkogler/Algorithm-DataStructures/blob/master/RangeQuery/SegmentTree.java
+04. Segement data_structure.tree for sum, min and any other implementation
+05. Partition of data_structure.linkedlist
+06. checkbalance in BST
+07. validate bst
+08. Tree serialization and hashing
+09. String Interleaving
+10. K largest element in O(n)
+11. Missing IP addresses
+12. Roman to int
+13. Wildcard matching
+14. longest substring without repeating character
+
+*************DAILY CODINGS*******************
+
+01. Dailycodings-17
+02. Dailycodings -130
+03. Dailycodings -135
+
+

@@ -1,0 +1,17 @@
+My answer :
+write your logs from system to a file from any logger
+library in async way (keep the format hourly so that file
+size do not become huge and keeping in mind ebays traffic)
+eg : xyz.01-01-2020-01.gz
+every ebay server (it has to be distributed) will
+write this hourly file into a file system
+at the end of the day , a cron/service collects these
+files and put them in separate machine (storage server : basically a cluster of mochines)
+machine where storage happens can be obtained by
+following consistent hashing mechanism : generate the hash
+of file name from a hash function and store the file on
+corresponding machine
+retrieval service can take input of time and at retriving part,
+use the same hash function to get the appropriate machine where the file is and serve it.
+
+https://dzone.com/articles/distributed-logging-architecture-for-microservices

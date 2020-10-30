@@ -1,0 +1,47 @@
+Main takeaways I have
+Spend a lot of time and really immerse yourself in resources l
+ike Leetcode, tech Youtube channels, conferences, etc.
+ Once you do this ideas will start coming to your head about
+  how to pass these interviews. This is very underrated tip.
+  Everyone has different methods of how they break into companies,
+  simply grinding problems isn't enough. If you are reading and
+  immersing yourself in a bunch of different content, you will
+  find out what works best for YOU to get an offer.
+Make interview prep fun. I was not a CS major so prepping for
+Leetcode was very daunting for me. I hated idea of going to library,
+reading Cracking the Coding Interview, and struggling to solve Reverse Linked List.
+ What changed for me was when I made the studying ‘fun’. I studied with friends,
+ talked about it in groups online, bought myself food/snacks when studying, etc.
+ I would laugh with friends and meme about different problems. I
+  started to look forward to working on Leetcode and that consequently made me get good.
+Don't forget that interviewer is human.
+
+IMP:Problems: https://leetcode.com/discuss/interview-question/448285/List-of-questions-sorted-by-common-patterns
+ found a list of questions sorted by pattern on Hackernoon.
+ This is the link for the article https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed.
+ I created a LeetCode list for each of the patterns. I found it pretty useful, feel free to make a copy of the list and use it.
+
+2 Heaps
+Arrays
+Backtracking
+Dynamic Programming
+Fast & Slow pointers
+Graph Traversal
+In-place traversal of LL
+K-way merge
+Merge Intervals
+Modified Binary Search
+Sliding window
+Top K elements
+Topological Sorting
+Tree BFS
+Tree DFS
+Two Pointers
+Good Luck & Happy Coding!!
+https://github.com/SeanPrashad/leetcode-patterns
+https://leetcode.com/discuss/career/449135/How-to-effectively-use-LeetCode-to-prepare-for-interviews
+
+DP:https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+https://medium.com/@nanofaroque
+https://www.quora.com/What-tricks-enable-you-to-crack-code-interviews-at-FAANG-companies
+https://www.quora.com/Whats-a-good-schedule-for-cracking-big-tech-interviews-within-3-months

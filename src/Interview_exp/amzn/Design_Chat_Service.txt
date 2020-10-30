@@ -1,0 +1,8 @@
+Design an enterprise grade chat service which supports:
+
+authorized and anonymous users
+realtime message delivery
+chat history
+direct and group text messaging
+highly available
+durable
